@@ -5,6 +5,8 @@
   </head>
   <body>
     <a-scene light="defaultLightsEnabled: false">
+      <a-entity camera="active: true" wasd-controls look-controls position="-7 3 14" rotation="0 -45 0"></a-entity>
+
       <a-entity light="type: ambient; color: #464f4d"></a-entity>
       <a-entity light="type: directional; color: #464f4d; intensity: 0.8" position="-0.5 1 1"></a-entity>
 
@@ -37,7 +39,7 @@
 
         <a-box position="13.25 4 -10.75" color="#272c29" width="3.5" height="9"></a-box>
 
-        <a-box position="0 0 -10" color="#618f74" width="30" depth="4" height="0.2"></a-box>
+        <a-box src="images\greenground.png" position="0 0 -10" color="#618f74" width="30" depth="4" height="0.2"></a-box>
 
         <a-box position="0 8.75 -10.75" color="#272c29" width="30" depth="1" height="0.5"></a-box>
 
@@ -73,7 +75,7 @@
         <a-box position="-15 2 14.5" rotation="0 90 0" src="images/nighthawks_window.jpg" width="2" height="4"></a-box>
         <a-box position="-15 6.5 12.5" rotation="0 90 0" src="images/nighthawks_topBuilding.jpg" width="6" height="4"></a-box>
         
-        <a-box position="-14 0 0" rotation="0 90 0" color="#618f74" width="31" depth="4" height="0.2"></a-box>
+        <a-box src="images\greenground.png" position="-14 0 0" rotation="0 90 0" color="#618f74" width="31" depth="4" height="0.2"></a-box>
 
         <a-box position="-14.75 8.75 0" rotation="0 90 0" color="#272c29" width="31" depth="1" height="0.5"></a-box>
 
@@ -109,7 +111,7 @@
 
         <a-box position="13.25 4 -10.75" color="#272c29" width="3.5" height="9"></a-box>
 
-        <a-box position="0 0 -10" color="#618f74" width="30" depth="4" height="0.2"></a-box>
+        <a-box src="images\greenground.png" position="0 0 -10" color="#618f74" width="30" depth="4" height="0.2"></a-box>
 
         <a-box position="0 8.75 -10.75" color="#272c29" width="30" depth="1" height="0.5"></a-box>
 
@@ -145,7 +147,9 @@
         <a-box position="-15 2 14.5" rotation="0 90 0" src="images/nighthawks_window.jpg" width="2" height="4"></a-box>
         <a-box position="-15 6.5 12.5" rotation="0 90 0" src="images/nighthawks_topBuilding.jpg" width="6" height="4"></a-box>
         
-        <a-box position="-14 0 0" rotation="0 90 0" color="#618f74" width="31" depth="4" height="0.2"></a-box>
+        <a-box src="images\greenground.png" position="-14 0 0" rotation="0 90 0" color="#618f74" width="31" depth="4" height="0.2"></a-box>
+
+        <a-box src="images\greenground.png" position="0 0 2" color="#618f74" width="15" depth="15" height="0.2"></a-box>
 
         <a-box position="-14.75 8.75 0" rotation="0 90 0" color="#272c29" width="31" depth="1" height="0.5"></a-box>
 
@@ -153,18 +157,16 @@
       </a-entity>
 
       <!-- ceiling block -->
-      <a-cylinder color="#326a62" segments-radial=3 position="2 4.5 0" radius="8" height="0.8"></a-cylinder>
+      <a-cylinder src="images\trim.png" segments-radial=3 position="2 4.5 0" radius="8" height="0.8"></a-cylinder>
       <!-- sign on top-->
-      <a-box src="images\bar-roof.png" position="0 6 1" height="1.25" width="9" rotation="0 -65 0"></a-box>
-      <a-box src="images\bar-roof.png" position="4 6 1" height="1.25" width="9" rotation="0 65 0"></a-box>
-
+      <a-box src="images\bar-roof.png" position="0 5.7 1.393" height="1.25" width="11" rotation="0 -60 0"></a-box>
       <!-- windows block -->
       <a-cylinder segments-radial=3 position="2 2.5 0" radius="7.5" height="4" transparent="true" opacity="0.65"></a-cylinder>
       <!-- floor block -->
-      <a-cylinder color="#326a62" segments-radial=3 position="2 0.4 0" radius="8" height="0.8"></a-cylinder>
+      <a-cylinder src="images\trim.png" segments-radial=3 position="2 0.4 0" radius="8" height="0.8"></a-cylinder>
       
       <!-- table -->
-      <a-cylinder color="#6e2513" segments-radial=3 position="2 0.875 0" radius="3.5" height="1.75"></a-cylinder>
+      <a-cylinder src="images\table.png" segments-radial=3 position="2 0.875 0" radius="3.5" height="1.75"></a-cylinder>
       <!-- make the table hollow with a black shadow -->
       <a-cylinder color="black" segments-radial=3 position="2 0.875 0" radius="2" height="1.753"></a-cylinder>
 
@@ -183,12 +185,14 @@
       <a-cylinder color="brown" position="2 1 -2" radius=".2" height=".4"></a-cylinder>
       <a-cylinder color="brown" position="0 1 -2" radius=".2" height=".4"></a-cylinder>
 
-
-
       <!-- yellow back wallpaper -->
-      <a-box color="#fff200" depth="0" height="4.280" width="12.610" rotation="180 60 0" position="5.089 2.400 1.853"></a-box>
+      <a-box src="images\wallpaper.png" depth="0" height="4.280" width="12.610" rotation="180 60 0"
+        position="5.089 2.400 1.853"></a-box>
+
+      <a-box color="#5d4116" depth="0.1" height="3" width="1.5" rotation="180 60 0"
+        position="6.797 2.400 -1.105"></a-box>
       <!-- yellow ceiling -->
-      <a-cylinder color="#fff200" segments-radial=3 position="2 4.12 0" radius="7.5" height="0.1"></a-cylinder>
+      <a-cylinder src="images\wallpaper.png" segments-radial=3 position="2 4.12 0" radius="7.5" height="0.1"></a-cylinder>
       <!-- flooring im imagining to be maybe wood textured -->
       <a-cylinder color="#5d4116" segments-radial=3 position="2 0.77 0" radius="7.5" height="0.1"></a-cylinder>
       
