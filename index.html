@@ -151,9 +151,27 @@
 
         <a-box position="-14.75 4.25 0" rotation="0 90 0" color="#272c29" width="31" depth="1" height="0.5"></a-box>
       </a-entity>
-      
-      <a-box position="7.5 0.25 0" color="red" width="15" height="0.5"></a-box>
 
+      <!-- ceiling block -->
+      <a-cylinder color="#326a62" segments-radial=3 position="2 4.5 0" radius="8" height="0.8"></a-cylinder>
+      <!-- windows block -->
+      <a-cylinder segments-radial=3 position="2 2.5 0" radius="7.5" height="4" transparent="true" opacity="0.65"></a-cylinder>
+      <!-- floor block -->
+      <a-cylinder color="#326a62" segments-radial=3 position="2 0.4 0" radius="8" height="0.8"></a-cylinder>
+      
+      <!-- table -->
+      <a-cylinder color="#6e2513" segments-radial=3 position="2 0.875 0" radius="3.5" height="1.75"></a-cylinder>
+      <!-- make the table hollow with a black shadow -->
+      <a-cylinder color="black" segments-radial=3 position="2 0.875 0" radius="2" height="1.753"></a-cylinder>
+
+      <!-- yellow back wallpaper -->
+      <a-box color="#fff200" depth="0" height="4.280" width="12.610" rotation="180 60 0" position="5.089 2.400 1.853"></a-box>
+      <!-- yellow ceiling -->
+      <a-cylinder color="#fff200" segments-radial=3 position="2 4.12 0" radius="7.5" height="0.1"></a-cylinder>
+      <!-- flooring im imagining to be maybe wood textured -->
+      <a-cylinder color="#5d4116" segments-radial=3 position="2 0.77 0" radius="7.5" height="0.1"></a-cylinder>
+      
+      <a-light color="#e6e288" position="1 1 0"></a-light>
       <a-sky color="#261f47"></a-sky>
       <a-plane src="images/ground.jpeg" rotation="-90 0 0" width="30" height="30"></a-plane>
     </a-scene>
